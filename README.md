@@ -1,14 +1,6 @@
-# Modelo para Apresentação do Grupo e Projeto
+## Projeto: Análise de mRNA ao longo do desenvolvimento em Câncer de Próstata
 
-> arquivo `README.md` que fica na raiz
-
-## Projeto <Título do Projeto>
-
-## Project <Title in English>
-
----
-
-Incluir nome RA e foco de especialização de cada membro do grupo.
+## Project: mRNA Analysis throughout Development in Prostate Cancer
 
 | Nome | RA | Especialização |
 | :--- | :--- | :--- |
@@ -25,4 +17,12 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 ## Descrição Resumida do Projeto
 
-> Descrição do tema do projeto, incluindo motivação e contexto gerador.
+O projeto investiga a progressão do Câncer de Próstata (CdP) focando na análise de mRNA para identificar mudanças moleculares em diferentes estágios da doença. A motivação central é entender como a expressão gênica se altera desde o estado inicial até fases mais agressivas e resistentes.
+
+Atualmente, o grupo avalia duas estratégias de dados provenientes de repositórios públicos (como o GEO):
+
+1. **Linhagens Celulares:** Permite comparar estados de resistência e sensibilidade, porém apresenta a limitação técnica de utilizar amostras de indivíduos distintos.
+
+2. **Modelos de Camundongos:** Oferece uma progressão temporal mais confiável (mesmo perfil genético em tempos diferentes), embora demande um esforço computacional maior no processamento de dados brutos.
+
+O objetivo final é aplicar estratégias de Ciência de Redes para identificar "genes-hub" e construir um modelo lógico que ajude a prever a progressão da malignidade com base no perfil de expressão.

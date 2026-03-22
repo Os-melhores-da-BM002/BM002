@@ -1,6 +1,6 @@
-## Projeto: Análise de mRNA ao longo do desenvolvimento em Câncer de Próstata
+# Projeto `Assinatura de Progressão no Câncer de Próstata via Ciência de Redes`
 
-## Project: mRNA Analysis throughout Development in Prostate Cancer
+# Project `Prostate Cancer Progression Signature via Network Science`
 
 | Nome | RA | Especialização |
 | :--- | :--- | :--- |
@@ -11,18 +11,14 @@
 | Victoria Christina de Moraes Atilio | 295891 | Computação |
 | Vinícius Costa de Oliveira | 324079 | Computação |
 
-## Apresentação
+# Apresentação
 
 O presente projeto foi originado no contexto das atividades da disciplina de pós-graduação [Ciência e Visualização de Dados em Saúde](https://link-da-disciplina), oferecida no primeiro semestre de 2026, na Unicamp.
 
-## Descrição Resumida do Projeto
+# Descrição Resumida do Projeto
 
-O projeto investiga a progressão do Câncer de Próstata (CdP) focando na análise de mRNA para identificar mudanças moleculares em diferentes estágios da doença. A motivação central é entender como a expressão gênica se altera desde o estado inicial até fases mais agressivas e resistentes.
+O câncer de próstata (CdP) apresenta um comportamento biológico complexo, onde a transição de um estado indolente para uma forma maligna agressiva é acompanhada por mudanças drásticas no perfil de expressão gênica. O objetivo deste projeto é investigar a progressão da malignidade do CdP não apenas pelo aumento de genes isolados, mas através da alteração na ***topologia das redes de interação de mRNAs***.
 
-Atualmente, o grupo avalia duas estratégias de dados provenientes de repositórios públicos (como o GEO):
+Para superar as limitações de amostras isoladas, a estratégia do grupo consiste na combinação de múltiplos datasets transcriptômicos provenientes do ***GEO (Gene Expression Omnibus)***. A partir desses dados, construiremos grafos onde os nós representam mRNAs e as arestas representam correlações funcionais ou de coexpressão.
 
-1. **Linhagens Celulares:** Permite comparar estados de resistência e sensibilidade, porém apresenta a limitação técnica de utilizar amostras de indivíduos distintos.
-
-2. **Modelos de Camundongos:** Oferece uma progressão temporal mais confiável (mesmo perfil genético em tempos diferentes), embora demande um esforço computacional maior no processamento de dados brutos.
-
-O objetivo final é aplicar estratégias de Ciência de Redes para identificar "genes-hub" e construir um modelo lógico que ajude a prever a progressão da malignidade com base no perfil de expressão.
+Através de métricas de ciência de redes, pretendemos identificar "genes-hub" que atuam como reguladores centrais em cada fase do tumor (desde o primário até o metastático insensível a andrógenos). A hipótese central é que a malignidade pode ser predita pela reorganização dessas redes. Ao final, buscaremos definir uma assinatura de progressão baseada na importância estrutural desses genes, oferecendo uma nova perspectiva sobre os mecanismos moleculares que regem o avanço do CdP.

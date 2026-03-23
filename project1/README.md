@@ -8,7 +8,7 @@ O câncer de próstata (CdP) apresenta um comportamento biológico complexo, ond
 
 # Slides
 
-> Coloque aqui o link para o PDF da apresentação da parte 1.
+> https://drive.google.com/file/d/14drXtPxpBi2H304IXU73kV5FaytLiQc2/view?usp=sharing
 
 # Fundamentação Teórica
 
@@ -44,11 +44,8 @@ O projeto fundamenta-se na identificação de marcas funcionais do câncer e nos
 
 # Modelo Lógico
 
-> Modelo lógico da base de grafos que será construída. Para o modelo de grafos de propriedades, utilize este
-> [modelo de base](https://docs.google.com/presentation/d/10RN7bDKUka_Ro2_41WyEE76Wxm4AioiJOrsh6BRY3Kk/edit?usp=sharing) para construir o seu.
-> Coloque a imagem do PNG do seu modelo lógico como ilustrado abaixo (a imagem estará na pasta `image`):
->
-> ![Modelo Lógico de Grafos](adicionar imagem)
+
+> ![Modelo Lógico de Grafos](/project1/assets/images/modelo_logico_entrega-1.png)
 
 # Metodologia
 

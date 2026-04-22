@@ -4,14 +4,14 @@ if (!require("BiocManager", quietly = TRUE)) {
 
 # Instala o DESeq2 e dependências de bioinformática
 # Update=FALSE e Ask=FALSE agilizam o processo no Colab
-BiocManager::install(c("DESeq2", "limma", "ggplot2"), update = FALSE, ask = FALSE)
+# BiocManager::install(c("DESeq2", "limma", "ggplot2"), update = FALSE, ask = FALSE)
 
 # Carrega
 library(DESeq2)
 library(limma)
 library(ggplot2)
 
-counts <- read.delim("../../data/raw/GSE148544_raw_counts.csv", row.names = 1, sep = "\t")
+counts <- read.delim("../../../data/raw/GSE148544_raw_counts.csv", row.names = 1, sep = "\t")
 
 ncol(counts)
 
@@ -29,6 +29,6 @@ dds <- DESeq(dds)
 
 #Extrar os resultados 
 res <- results(dds, contrast = c("condition", "Metastatico", "Prostate"))
-write.csv(as.data.frame(res), "../../data/processed/resultados_Metastatico_vs_Prost_cytoscape.csv")
+write.csv(as.data.frame(res), "../../../data/processed/resultados_Metastatico_vs_Prost_cytoscape.csv")
 
 table(colData$condition)

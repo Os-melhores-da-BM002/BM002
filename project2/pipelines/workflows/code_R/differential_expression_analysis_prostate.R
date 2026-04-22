@@ -15,21 +15,21 @@
 # 
 # install.packages("DESeq2", dependencies = TRUE)
 # 
-# Instala o DESeq2 e dependências de bioinformática
+# # Instala o DESeq2 e dependências de bioinformática
 # # Update=FALSE e Ask=FALSE agilizam o processo no Colab
 # BiocManager::install(c("DESeq2", "limma", "ggplot2"), update = FALSE, ask = FALSE)
 
-# Carrega
+# Carrega as bibliotecas necessárias
 library(DESeq2)
 library(limma)
 library(ggplot2)
 
 # 1. Carregar os dados
 # Dataset 1(Controle)
-df_ctrl <- read.table("../../data/raw/GSE148544_Du145-sicontrol-siCDCA2.txt", header = TRUE, sep = "\t", dec = ",", check.names = FALSE)
+df_ctrl <- read.table("../../../data/raw/GSE148544_Du145-sicontrol-siCDCA2.txt", header = TRUE, sep = "\t", dec = ",", check.names = FALSE)
 
 # Dataset 2(Tumor)
-df_tumor <- read.table("../../data/raw/GSM4501305_LVCaP-2_413_data.txt", header = TRUE, sep = "\t", dec = ",", check.names = FALSE)
+df_tumor <- read.table("../../../data/raw/GSM4501305_LVCaP-2_413_data.txt", header = TRUE, sep = "\t", dec = ",", check.names = FALSE)
 
 # 2. Identificar colunas de interesse
 # No df_ctrl usei 'Gene_symbol' e 'Frag_count'
@@ -100,7 +100,7 @@ res_df$gene <- rownames(res_df)
 res_df <- res_df[order(res_df$pvalue), ]
 
 # Salvar o resultado final
-write.csv(res_df, "../../data/processed/resultados_completos_DEA.csv", row.names = FALSE)
+write.csv(res_df, "../../../data/processed/resultados_completos_DEA.csv", row.names = FALSE)
 print(head(res_df))
 
 # 8. Criar o gráfico

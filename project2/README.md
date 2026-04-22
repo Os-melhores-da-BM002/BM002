@@ -9,8 +9,6 @@ O câncer de próstata (CdP) apresenta um comportamento biológico complexo, ond
 
 # Slides
 
-> Coloque aqui o link para o PDF da apresentação da parte 2.
-
 [Apresentação em pdf](./assets/slides/slides.pdf)
 
 
@@ -40,9 +38,6 @@ O projeto fundamenta-se na identificação de marcas funcionais do câncer e nos
 
 A análise aplicará estratégias de ***Ciência de Redes***. Pretendemos explorar a ***Análise de Centralidade*** para identificar "genes-hub" (reguladores centrais) e a comparação topológica entre as redes de cada fase da doença para detectar padrões de reorganização estrutural associados à malignidade.
 
-% > Proposta de metodologia incluindo especificação de quais de Ciência de Redes que estão sendo usadas no projeto,
-% > tais como: detecção de comunidades, análise de centralidade, predição de links, ou a combinação de uma ou mais técnicas. Descreva o que perguntas pretende endereçar com a técnica escolhida.
-
 ## Bases de Dados e Evolução
 
 | Base de Dados | Endereço na Web | Resumo descritivo |
@@ -53,12 +48,11 @@ A análise aplicará estratégias de ***Ciência de Redes***. Pretendemos explor
 | **GSE131985** | [Link GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE131985) | Transcriptomas de linhagens LNCaP95 com nocaute do receptor de andrógeno em condições de enriquecimento ou depleção hormonal. |
 | **GSE210205** | [Link GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE210205) | Comparação entre linhagem benigna (BPH-1) e cancerígenas (DU145/PC3) para construção de assinaturas de resposta inflamatória. |
 
-> Boa parte dos datasets precisam de um tratamento especial, o que dificultou o uso direto do GEO Soft no Orange. Esse foi um dos principais motivos para a adoção do R no tratamento e padronização das análises, permitindo um maior controle sobre os dados de entrada, os filtros estatísticos e a geração das tabelas utilizadas nas etapas posteriores.
+Boa parte dos datasets precisam de um tratamento especial, o que dificultou o uso direto do GEO Soft no Orange. Esse foi um dos principais motivos para a adoção do R no tratamento e padronização das análises, permitindo um maior controle sobre os dados de entrada, os filtros estatísticos e a geração das tabelas utilizadas nas etapas posteriores.
 
 ## Modelo Lógico
 
-> ![Modelo Lógico de Grafos](./assets/images/modelo_logico_entrega-2.png)
-
+![Modelo Lógico de Grafos](./assets/images/modelo_logico_entrega-2.png)
 
 ## Integração entre Bases
 
@@ -80,19 +74,19 @@ Por outro lado, não foram encontrados sinais expressivos relacionados à migra�
 
 Rede completa:
 
-> ![Rede completa](./assets/images/all_networks.png)
+![Rede completa](./assets/images/all_networks.png)
 
 Subrede apenas com as de maior centralidade:
 
-> ![Subrede centralidade](./assets/images/centralidade.png)
+![Subrede centralidade](./assets/images/centralidade.png)
 
 Rede de Up-Regulated:
 
-> ![Rede Upregulated](./assets/images/Upregulated.png)
+![Rede Upregulated](./assets/images/Upregulated.png)
 
 Rede de Down-Regulated:
 
-> ![Rede Downregulated](./assets/images/Downregulated.png)
+![Rede Downregulated](./assets/images/Downregulated.png)
 
 ## Evolução do Projeto
 

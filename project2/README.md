@@ -1,72 +1,3 @@
-# P2 - Template da Segunda Entrega
-*2026.1 Ciência e Visualização de Dados em Saúde*
-
-# Estrutura de sua pasta de projeto
-
-A fim de uniformizar os repositórios de projetos da disciplina, os diretórios de seu repositório deverão ser nomeados conforme segue.
-
-A estrutura aqui apresentada é uma simplificação daquela proposta pelo [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/). Também será aceito que o projeto adote a estrutura completa do Cookiecutter Data Science e isso será considerado um diferencial. A estrutura geral é a seguinte e será detalhada a seguir:
-
-~~~
-...
-│
-└── project2
-    |
-    ├── README.md  <- texto da Entrega 2 do projeto
-    │
-    ├── data
-    │   ├── external       <- dados de terceiros em formato usado para entrada na transformação
-    │   ├── interim        <- dados intermediários, e.g., resultado de transformação
-    │   ├── processed      <- dados finais usados para a publicação
-    │   └── raw            <- dados originais sem modificações
-    │
-    ├── pipelines
-    │   ├── notebooks      <- Jupyter notebooks ou equivalentes
-    │   └── workflows      <- workflows Orange ou equivalentes 
-    |
-    ├── src                <- fonte em linguagem de programação ou sistema (e.g., Orange, Cytoscape)
-    │   └── README.md      <- instruções básicas de instalação/execução
-    │
-    └── assets             <- mídias usadas no projeto
-        ├── images  <- imagens usadas no texto do README.md
-        └── slides  <- slides da prévia (em PDF)
-~~~
-
-Na raiz da pasta `project2` deve haver um arquivo de nome `README.md` contendo a apresentação do projeto, como detalhado na seção seguinte.
-
-## `data`
-
-Arquivos de dados usados no projeto, quando isso ocorrer.
-
-## `pipelines`
-
-Processos implementados no projeto que tenham sido executados em algum mecanismo de workflow, como o Orange, ou de notebook, como o Jupyter.
-
-## `src`
-
-Código implementado em alguma linguagem de programação, se houver, além dos workflows e notebooks.
-
-Projeto na linguagem escolhida incluindo todos os arquivos de dados e bibliotecas necessários para a sua execução. Só coloque código Pyhton ou Java aqui se ele não rodar dentro do notebook.
-
-Acrescente na raiz um arquivo `README.md` com as instruções básicas de instalação e execução.
-
-## `assets`
-
-Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. Coloque os arquivos aqui (mesmo que você mantenha uma cópia no diretório do código).
-
-## `README.md`
-
-Segue abaixo o modelo de como deve ser apresentado e documentado o projeto. Há partes do modelo a seguir que têm uma marcação específica indicando que **não devem ser literalmente transcritas**:
-
-Trecho entre `<...>` representa algo que deve ser substituído pelo indicado. Nesse caso, você não deve manter os símbolos `<...>`.
-> Parágrafos que aparecem neste modo de citação representa algo que deve ser substituído pelo explicado.
-
-No modelo a seguir são colocados exemplos ilustrativos, que serão substituídos pelos do seu projeto.
-
-> # Modelo para Apresentação da Entrega 2 do Projeto (Arquivo README.md)
-
-<hr>
-
 # Projeto `Assinatura de Progressão no Câncer de Próstata via Ciência de Redes`
 
 # Project `Prostate Cancer Progression Signature via Network Science`
@@ -74,7 +5,7 @@ No modelo a seguir são colocados exemplos ilustrativos, que serão substituído
 
 # Descrição Resumida do Projeto
 
-O câncer de próstata (CdP) apresenta um comportamento biológico complexo, onde a transição de um estado indolente para uma forma maligna agressiva é acompanhada por mudanças drásticas no perfil de expressão gênica. O objetivo deste projeto é investigar a progressão da malignidade do CdP através da alteração na topologia das redes de interação de mRNAs. A estratégia central foca na combinação de múltiplos datasets transcriptômicos para mapear a evolução da doença em cinco estágios críticos, desde o tumor primário até o estado metastático insensível a andrógenos..
+O câncer de próstata (CdP) apresenta um comportamento biológico complexo, onde a transição de um estado indolente para uma forma maligna agressiva é acompanhada por mudanças drásticas no perfil de expressão gênica. O objetivo deste projeto é investigar a progressão da malignidade do CdP através da alteração na topologia das redes de interação de mRNAs. A estratégia central foca na combinação de múltiplos datasets transcriptômicos para mapear a evolução da doença em cinco estágios críticos, desde o tumor primário até o estado metastático insensível a andrógenos.
 
 # Slides
 
@@ -122,9 +53,7 @@ A análise aplicará estratégias de ***Ciência de Redes***. Pretendemos explor
 | **GSE131985** | [Link GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE131985) | Transcriptomas de linhagens LNCaP95 com nocaute do receptor de andrógeno em condições de enriquecimento ou depleção hormonal. |
 | **GSE210205** | [Link GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE210205) | Comparação entre linhagem benigna (BPH-1) e cancerígenas (DU145/PC3) para construção de assinaturas de resposta inflamatória. |
 
-> Faça uma descrição sobre o que concluiu sobre esta base. Sugere-se que respondam perguntas ou forneçam informações indicadas a seguir:
-> * O que descobriu sobre essa base?
-> * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
+> Boa parte dos datasets precisam de um tratamento especial, o que dificultou o uso direto do GEO Soft no Orange. Esse foi um dos principais motivos para a adoção do R no tratamento e padronização das análises, permitindo um maior controle sobre os dados de entrada, os filtros estatísticos e a geração das tabelas utilizadas nas etapas posteriores.
 
 ## Modelo Lógico
 
@@ -133,18 +62,42 @@ A análise aplicará estratégias de ***Ciência de Redes***. Pretendemos explor
 
 ## Integração entre Bases
 
-> Descreva se houve desafios de integração de fontes de dados.
+A integração entre as bases apresentou desafios principalmente relacionados à heterogeneidade dos dados e à necessidade de padronização do fluxo de análise. 
+
+Foi observado que, algumas das amostras já se encontrava em estágios mais avançados, com genes diferencialmente expressos previamente organizados, enquanto outras ainda exigiam tratamento, pois eram dados crus. Além disso, houve limitação no número de amostras disponíveis para algumas comparações, o que inviabilizou determinadas análises estatísticas diretas. Para resolver esse problema, optou-se por consolidar diferentes linhagens metastáticas em uma única condição, ou seja, comparando-as com a condição "sem câncer". 
+
+Essa decisão teve como principal objetivo aumentar a análise estatística e permitir a aplicação adequada do DESeq2. A partir disso, tornou-se evidente a necessidade de um workflow padronizado, capaz de receber datasets em diferentes pontos de processamento e ainda assim produzir saídas equivalentes e comparáveis entre si.
 
 ## Análise Preliminar
 
-> Este item não é obrigatório neste estágio. Apresente aqui uma análise preliminar dos dados se houver.
-> Utilize gráficos que descrevam os aspectos principais da base que são relevantes para as perguntas de pesquisa consideradas.
+A análise preliminar foi construída a partir da comparação entre uma condição sem câncer e uma condição metastática, formada pela reunião de diferentes linhagens metastáticas em uma única classe.
+
+Como resultado inicial, foram identificados aproximadamente 1.400 genes diferencialmente expressos. Para refinar esse conjunto e tornar a visualização viável, foram adotados filtros com p-valor de corte igual a 0.05 e log fold change maior que 2 ou menor que -2. Em seguida, foram geradas redes separadas para genes upregulated e downregulated, permitindo observar diferenças no padrão de conectividade entre esses grupos.
+
+De forma preliminar, observou-se que os genes upregulated apresentaram maior conectividade entre si do que os genes downregulated. Entre os nós centrais da rede, destacaram-se genes associados à proliferação celular e entrada no ciclo celular, como CDK1, AURKA, ESR1 e IGF, além de complexos gênicos relacionados à biossíntese de DNA. Também foram observadas evidências de que muitos dos genes relevantes possuem atuação associada à porção nuclear da célula.
+
+Por outro lado, não foram encontrados sinais expressivos relacionados à migração celular, possivelmente os dados analisados vieram de experimentos conduzidos in vitro, em condições que não foram feitas para induzir ou avaliar migração. Assim, a ausência desse sinal não interfere na natureza metastática das linhagens, mas ajuda a observar as limitações do contexto experimental empregado.
+
+Rede completa:
+
+> ![Rede completa](./assets/images/all_networks.png)
+
+Subrede apenas com as de maior centralidade:
+
+> ![Subrede centralidade](./assets/images/centralidade.png)
+
+Rede de Up-Regulated:
+
+> ![Rede Upregulated](./assets/images/Upregulated.png)
+
+Rede de Down-Regulated:
+
+> ![Rede Downregulated](./assets/images/Downregulated.png)
 
 ## Evolução do Projeto
-> Este item não é obrigatório neste estágio, mas pode ser uma preparação para o estágio final.
-> Relatório de evolução, descrevendo as evoluções na modelagem do projeto, dificuldades enfrentadas, mudanças de rumo, melhorias e lições aprendidas. Referências aos diagramas, modelos e recortes de mudanças são bem-vindos.
-> Podem ser apresentados destaques na evolução dos modelos conceitual e lógico. O modelo inicial e intermediários (quando relevantes) e explicação de refinamentos, mudanças ou evolução do projeto que fundamentaram as decisões.
-> Relatar o processo para se alcançar os resultados é tão importante quanto os resultados.
+
+A evolução do projeto partiu da definição da abordagem que seria utilizada para analisar os diferentes estágios do câncer de próstata. Optou-se por trabalhar com amostras de pacientes distintos em diferentes fases da doença, o que trouxe desafios relacionados ao tratamento dos dados e à padronização de um único workflow de análise. Assim, o principal foco de desenvolvimento do projeto passou a ser a construção de uma pipeline reprodutível, capaz de receber tanto dados brutos quanto dados parcialmente processados.
+
 
 # Ferramentas
 
@@ -166,4 +119,4 @@ A análise aplicará estratégias de ***Ciência de Redes***. Pretendemos explor
 
 6. ZHANG, Y. et al. CDCA2 Inhibits Apoptosis and Promotes Cell Proliferation in Prostate Cancer and Is Directly Regulated by HIF-1α Pathway. **Frontiers in Oncology**, v. 10, p. 725, 2020. DOI: [10.3389/fonc.2020.00725](https://doi.org/10.3389/fonc.2020.00725).
 
-7. ZHU, Y. et al. Role of androgen receptor splice variant-7 (AR-V7) in prostate cancer resistance to 2nd-generation androgen receptor signaling inhibitors. **Oncogene**, v. 39, p. 6935–6949, 2020. DOI: [10.1038/s41388-020-01479-6](https://doi.org/10.1038/s41388-020-01479-6). 
+7. ZHU, Y. et al. Role of androgen receptor splice variant-7 (AR-V7) in prostate cancer resistance to 2nd-generation androgen receptor signaling inhibitors. **Oncogene**, v. 39, p. 6935–6949, 2020. DOI: [10.1038/s41388-020-01479-6](https://doi.org/10.1038/s41388-020-01479-6).

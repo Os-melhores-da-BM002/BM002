@@ -16,29 +16,30 @@
 	<annotations />
 	<thumbnail />
 	<node_properties>
-		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': 'C:/Users/Vinícius/OneDrive/Área de Trabalho/BM002/Data/Raw/GSM4501305_LVCaP-2_413_data.txt'}, {'encoding': 'utf-8', 'delimiter': '\t', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 7, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': 'C:/Users/Vinícius/OneDrive/Área de Trabalho/BM002/Data/Raw', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x1e\x00\x00\x01=\x00\x00\x04N\x00\x00\x02\x9a\x00\x00\x03\x1e\x00\x00\x01\\\x00\x00\x04N\x00\x00\x02\x9a\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03\x1e\x00\x00\x01\\\x00\x00\x04N\x00\x00\x02\x9a', '__version__': 3}</properties>
-		<properties node_id="1" format="pickle">gASVDgIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
-cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAooAAACw
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': '/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/project2/data/raw/GSM4501305_LVCaP-2_413_data.txt'}, {'encoding': 'utf-8', 'delimiter': '\t', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 7, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ({'type': 'AbsPath', 'path': '/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/BM002/C:/Users/Vinícius/OneDrive/Área de Trabalho/BM002/Data/Raw/GSM4501305_LVCaP-2_413_data.txt'}, {'encoding': 'utf-8', 'delimiter': '\t', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 7, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/project2/data/raw', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03^\x00\x00\x01Z\x00\x00\x04\x92\x00\x00\x02\xc2\x00\x00\x03^\x00\x00\x01\x7f\x00\x00\x04\x92\x00\x00\x02\xc2\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03^\x00\x00\x01\x7f\x00\x00\x04\x92\x00\x00\x02\xc2', '__version__': 3}</properties>
+		<properties node_id="1" format="pickle">gASVTAIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAooAAACq
 AAAE4QAAAyYAAAKKAAAAzwAABOEAAAMmAAAAAAAAAAAHgAAAAooAAADPAAAE4QAAAyaUjBJ1c2Vf
 aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
 YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
 bl9yb2xlX2hpbnRzlH2UKIwJR2VuZV9uYW1llEsDhpSMCWF2YWlsYWJsZZRLAIaUjAltUk5BX3Np
 emWUSwKGlGgVSwGGlIwKRnJhZ19jb3VudJRLAoaUaBVLAoaUjANGUE2USwKGlGgVSwOGlIwERlBL
 TZRLAoaUaBVLBIaUjAlFbnRyZXpfSUSUSwKGlGgVSwWGlIwLR2VuZV9zeW1ib2yUSwOGlIwEbWV0
-YZRLAIaUdUr+////hpRoB0sBdYwKYXR0cmlidXRlc5R9lChoI0sCaBdLAmgaSwJoHUsCaCBLAnWM
-BW1ldGFzlH2UKGgmSwNoE0sDdXViYXUu
+YZRLAIaUdUr+////hpRoB0sBdYwKYXR0cmlidXRlc5R9lCiMCUVudHJlel9JRJRLAowJbVJOQV9z
+aXpllEsCjApGcmFnX2NvdW50lEsCjANGUE2USwKMBEZQS02USwJ1jAVtZXRhc5R9lCiMC0dlbmVf
+c3ltYm9slEsDjAlHZW5lX25hbWWUSwN1dWJhdS4=
 </properties>
-		<properties node_id="2" format="pickle">gASVmwEAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
-V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAyoAAADiAAAEQQAAAvQAAAMqAAABAQAABEEAAAL0
+		<properties node_id="2" format="pickle">gASVpQEAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAyoAAADcAAAEQQAAAvQAAAMqAAABAQAABEEAAAL0
 AAAAAAAAAAAHgAAAAyoAAAEBAAAEQQAAAvSUjAp0aWVicmVha2VylIwNTGFzdCBpbnN0YW5jZZSM
 C19fdmVyc2lvbl9flEsBjBBjb250ZXh0X3NldHRpbmdzlF2UjBVvcmFuZ2V3aWRnZXQuc2V0dGlu
 Z3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojA1zZWxlY3RlZF92YXJzlF2UjAlFbnRy
-ZXpfSUSUS2aGlGFK/f///4aUaAdLAXWMCmF0dHJpYnV0ZXOUfZQoaBNLAowJbVJOQV9zaXpllEsC
-jApGcmFnX2NvdW50lEsCjANGUE2USwKMBEZQS02USwJ1jAVtZXRhc5R9lCiMC0dlbmVfc3ltYm9s
-lEsDjAlHZW5lX25hbWWUSwN1dWJhdS4=
+ZXpfSUSUS2aGlGFK/f///4aUaAdLAXWMCmF0dHJpYnV0ZXOUfZQojAlFbnRyZXpfSUSUSwKMCW1S
+TkFfc2l6ZZRLAowKRnJhZ19jb3VudJRLAowDRlBNlEsCjARGUEtNlEsCdYwFbWV0YXOUfZQojAtH
+ZW5lX3N5bWJvbJRLA4wJR2VuZV9uYW1llEsDdXViYXUu
 </properties>
-		<properties node_id="3" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02&amp;\x00\x00\x00\xe2\x00\x00\x05E\x00\x00\x02\xf4\x00\x00\x02&amp;\x00\x00\x01\x01\x00\x00\x05E\x00\x00\x02\xf4\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02&amp;\x00\x00\x01\x01\x00\x00\x05E\x00\x00\x02\xf4', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
-		<properties node_id="4" format="literal">{'add_type_annotations': True, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03?\x00\x00\x01\x94\x00\x00\x04\x80\x00\x00\x02C\x00\x00\x03?\x00\x00\x01\xb3\x00\x00\x04\x80\x00\x00\x02C\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03?\x00\x00\x01\xb3\x00\x00\x04\x80\x00\x00\x02C', 'stored_name': 'LVCaP-2_processed_data.csv', 'stored_path': 'C:/Users/Vinícius/OneDrive/Área de Trabalho/BM002/Data/Processed', '__version__': 3}</properties>
+		<properties node_id="3" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02&amp;\x00\x00\x00\xdc\x00\x00\x05E\x00\x00\x02\xf4\x00\x00\x02&amp;\x00\x00\x01\x01\x00\x00\x05E\x00\x00\x02\xf4\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02&amp;\x00\x00\x01\x01\x00\x00\x05E\x00\x00\x02\xf4', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="4" format="literal">{'add_type_annotations': True, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03?\x00\x00\x01\xb3\x00\x00\x04P\x00\x00\x02F\x00\x00\x03?\x00\x00\x01\xb3\x00\x00\x04P\x00\x00\x02F\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03?\x00\x00\x01\xb3\x00\x00\x04P\x00\x00\x02F', 'stored_name': 'LVCaP-2_genes.csv', 'stored_path': '/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/BM002/project2/data/interim', '__version__': 3}</properties>
 	</node_properties>
 	<session_state>
 		<window_groups />

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV File Import" position="(150, 150)" />
+		<node id="1" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns" position="(465.0, 151.0)" />
+		<node id="2" name="Unique" qualified_name="Orange.widgets.data.owunique.OWUnique" project_name="Orange3" version="" title="Unique" position="(310.0, 150.0)" />
+		<node id="3" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(633.0, 151.0)" />
+		<node id="4" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save Data" position="(783.0, 151.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="2" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="1" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="3" source_node_id="3" sink_node_id="4" source_channel="Selected Data" sink_channel="Data" enabled="true" source_channel_id="selected_data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'AbsPath', 'path': 'C:/Users/Vinícius/OneDrive/Área de Trabalho/BM002/Data/Raw/GSM4501305_LVCaP-2_413_data.txt'}, {'encoding': 'utf-8', 'delimiter': '\t', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 7, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': 'C:/Users/Vinícius/OneDrive/Área de Trabalho/BM002/Data/Raw', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x1e\x00\x00\x01=\x00\x00\x04N\x00\x00\x02\x9a\x00\x00\x03\x1e\x00\x00\x01\\\x00\x00\x04N\x00\x00\x02\x9a\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03\x1e\x00\x00\x01\\\x00\x00\x04N\x00\x00\x02\x9a', '__version__': 3}</properties>
+		<properties node_id="1" format="pickle">gASVDgIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAooAAACw
+AAAE4QAAAyYAAAKKAAAAzwAABOEAAAMmAAAAAAAAAAAHgAAAAooAAADPAAAE4QAAAyaUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwJR2VuZV9uYW1llEsDhpSMCWF2YWlsYWJsZZRLAIaUjAltUk5BX3Np
+emWUSwKGlGgVSwGGlIwKRnJhZ19jb3VudJRLAoaUaBVLAoaUjANGUE2USwKGlGgVSwOGlIwERlBL
+TZRLAoaUaBVLBIaUjAlFbnRyZXpfSUSUSwKGlGgVSwWGlIwLR2VuZV9zeW1ib2yUSwOGlIwEbWV0
+YZRLAIaUdUr+////hpRoB0sBdYwKYXR0cmlidXRlc5R9lChoI0sCaBdLAmgaSwJoHUsCaCBLAnWM
+BW1ldGFzlH2UKGgmSwNoE0sDdXViYXUu
+</properties>
+		<properties node_id="2" format="pickle">gASVmwEAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAyoAAADiAAAEQQAAAvQAAAMqAAABAQAABEEAAAL0
+AAAAAAAAAAAHgAAAAyoAAAEBAAAEQQAAAvSUjAp0aWVicmVha2VylIwNTGFzdCBpbnN0YW5jZZSM
+C19fdmVyc2lvbl9flEsBjBBjb250ZXh0X3NldHRpbmdzlF2UjBVvcmFuZ2V3aWRnZXQuc2V0dGlu
+Z3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojA1zZWxlY3RlZF92YXJzlF2UjAlFbnRy
+ZXpfSUSUS2aGlGFK/f///4aUaAdLAXWMCmF0dHJpYnV0ZXOUfZQoaBNLAowJbVJOQV9zaXpllEsC
+jApGcmFnX2NvdW50lEsCjANGUE2USwKMBEZQS02USwJ1jAVtZXRhc5R9lCiMC0dlbmVfc3ltYm9s
+lEsDjAlHZW5lX25hbWWUSwN1dWJhdS4=
+</properties>
+		<properties node_id="3" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02&amp;\x00\x00\x00\xe2\x00\x00\x05E\x00\x00\x02\xf4\x00\x00\x02&amp;\x00\x00\x01\x01\x00\x00\x05E\x00\x00\x02\xf4\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x02&amp;\x00\x00\x01\x01\x00\x00\x05E\x00\x00\x02\xf4', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="4" format="literal">{'add_type_annotations': True, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03?\x00\x00\x01\x94\x00\x00\x04\x80\x00\x00\x02C\x00\x00\x03?\x00\x00\x01\xb3\x00\x00\x04\x80\x00\x00\x02C\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x03?\x00\x00\x01\xb3\x00\x00\x04\x80\x00\x00\x02C', 'stored_name': 'LVCaP-2_processed_data.csv', 'stored_path': 'C:/Users/Vinícius/OneDrive/Área de Trabalho/BM002/Data/Processed', '__version__': 3}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>

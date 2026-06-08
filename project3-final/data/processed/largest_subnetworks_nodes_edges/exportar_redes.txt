@@ -1,0 +1,20 @@
+table export table="Largest Subnetwork - BPH vs 22Rv1 default node" OutputFile="/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/BM002/project3-final/pipelines/workflows/cytoscape/node_BPH_vs_22Rv1.csv" options="CSV"
+table export table="Largest Subnetwork - BPH vs 22Rv1 default edge" OutputFile="/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/BM002/project3-final/pipelines/workflows/cytoscape/edge_BPH_vs_22Rv1.csv" options="CSV"
+
+table export table="Largest Subnetwork - BPH vs 22Rv1(2) default node" OutputFile="/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/BM002/project3-final/pipelines/workflows/cytoscape/node_BPH_vs_22Rv1_2.csv" options="CSV"
+table export table="Largest Subnetwork - BPH vs 22Rv1(2) default edge" OutputFile="/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/BM002/project3-final/pipelines/workflows/cytoscape/edge_BPH_vs_22Rv1_2.csv" options="CSV"
+
+table export table="Largest Subnetwork - 22Rv1 vs LNCap default node" OutputFile="/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/BM002/project3-final/pipelines/workflows/cytoscape/node_22Rv1_vs_LNCap.csv" options="CSV"
+table export table="Largest Subnetwork - 22Rv1 vs LNCap default edge" OutputFile="/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/BM002/project3-final/pipelines/workflows/cytoscape/edge_22Rv1_vs_LNCap.csv" options="CSV"
+
+table export table="Largest Subnetwork - LNCap vs PC3 default node" OutputFile="/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/BM002/project3-final/pipelines/workflows/cytoscape/node_LNCap_vs_PC3.csv" options="CSV"
+table export table="Largest Subnetwork - LNCap vs PC3 default edge" OutputFile="/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/BM002/project3-final/pipelines/workflows/cytoscape/edge_LNCap_vs_PC3.csv" options="CSV"
+
+table export table="Largest Angiogênse e Zinc Finger - LNCap vs PC3 default node" OutputFile="/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/BM002/project3-final/pipelines/workflows/cytoscape/node_Angiogense_Zinc_LNCap_vs_PC3.csv" options="CSV"
+table export table="Largest Angiogênse e Zinc Finger - LNCap vs PC3 default edge" OutputFile="/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/BM002/project3-final/pipelines/workflows/cytoscape/edge_Angiogense_Zinc_LNCap_vs_PC3.csv" options="CSV"
+
+table export table="Largest Subnetwork - Não Metastático vs Metastático default node" OutputFile="/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/BM002/project3-final/pipelines/workflows/cytoscape/node_Nao_Metastatico_vs_Metastatico.csv" options="CSV"
+table export table="Largest Subnetwork - Não Metastático vs Metastático default edge" OutputFile="/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/BM002/project3-final/pipelines/workflows/cytoscape/edge_Nao_Metastatico_vs_Metastatico.csv" options="CSV"
+
+table export table="Largests Subnetworks - Sensível a andrórgeno vs insensível a andrógeno default node" OutputFile="/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/BM002/project3-final/pipelines/workflows/cytoscape/node_Sensivel_vs_Insensivel.csv" options="CSV"
+table export table="Largests Subnetworks - Sensível a andrórgeno vs insensível a andrógeno default edge" OutputFile="/home/diogo-carvalho/DriveLocal/unicamp/2026_1/MO413_saude/final_project/BM002/project3-final/pipelines/workflows/cytoscape/edge_Sensivel_vs_Insensivel.csv" options="CSV"

@@ -23,7 +23,7 @@ O câncer de próstata (CdP) apresenta um comportamento biológico complexo, ond
 
 # Slides
 
-> Coloque aqui o link para o PDF da apresentação da parte 3.
+[Apresentação em pdf](./assets/slides/slides_apresentacao_final.pdf)
 
 # Fundamentação Teórica
 

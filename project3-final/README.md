@@ -3,22 +3,6 @@
 
 # Descrição Resumida do Projeto
 
-> Descrição resumida do tema do projeto. Sugestão de roteiro (cada item tipicamente tratado em uma ou poucas frases):
->
-> Contextualização do projeto
->
-> Caracterização do problema
->
-> Motivação
->
-> Relevância
->
-> Trabalhos relacionados
->
-> Indicação (bastante resumida) da análise proposta
->
-> Indicação (bastante resumida) dos resultados alcançados
-
 O câncer de próstata (CdP) apresenta um comportamento biológico complexo, onde a transição de um estado indolente para uma forma maligna agressiva é acompanhada por mudanças drásticas no perfil de expressão gênica. O objetivo deste projeto é investigar a progressão da malignidade do CdP através da alteração na topologia das redes de interação de mRNAs. A estratégia central foca na combinação de múltiplos datasets transcriptômicos para mapear a evolução da doença em estágios críticos, desde o tumor primário até o estado metastático insensível a andrógenos. Para isso, os dados foram ubmetidos a análise diferencial de expressão utilizando bibliotecas do R, seguido por extração de redes através da base STRING, possibilitando a descoberta de genes hub entre cada transição de estágios.
 
 # Slides
@@ -38,9 +22,8 @@ O projeto fundamenta-se na identificação de marcas funcionais do câncer e nos
 # Perguntas de Pesquisa
 
 1. Quais são os mRNAs centrais expressos em cada fase do tumor? 
-2. É possível prever a progressão da malignidade do CdP? 
 3. Existem grupos de genes que se mantêm estáveis ou desaparecem durante a progressão do câncer? 
-4. É possível identificar um mecanismo de assinatura baseado na centralidade de nós para prever a progressão do CdP? 
+4. É possível prever a progressão da malignidade do CdP? 
 5. Seria possível criar um mecanismo de identificação da possibilidade de aumento de malignidade do câncer com base em seu perfil de expressão?
 
 Este projeto ajuda a responder a essas perguntas identificando clusters e hubs fundamentais de expressão diferenciada na transição do estado primário, até estados de metástase sensível ou não à andrógeno. 
@@ -64,17 +47,13 @@ O fluxo de processamento (pipeline) inclui:
 | **GSE131985** | [Link GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE131985) | Transcriptomas de linhagens LNCaP95 com nocaute do receptor de andrógeno em condições de enriquecimento ou depleção hormonal. |
 | **GSE210205** | [Link GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE210205) | Comparação entre linhagem benigna (BPH-1) e cancerígenas (DU145/PC3) para construção de assinaturas de resposta inflamatória. |
 
-> Faça uma descrição sobre o que concluiu sobre esta base. Sugere-se que respondam perguntas ou forneçam informações indicadas a seguir:
-> * O que descobriu sobre essa base?
-> * Quais as transformações e tratamentos (e.g., dados faltantes e limpeza) feitos?
+Descobrimos que a maioria dessas bases continha dados muito granulares (valores de counts) para cada gene analisado, porém extraídos de estudos independentes e em estágios clínicos muito distintos. A principal transformação exigida foi a filtragem para selecionar apenas condições controle (sem veículo) , além da conversão e alinhamento do geneID no Orange para garantir que nomes de proteínas diferentes fossem padronizados entre os Datasets para a junção em uma tabela única final.
 
 ## Modelo Lógico
 
 ![Modelo Lógico de Grafos](assets/images/modelo_logico_entrega-3.png)
 
 ## Integração entre Bases
-
-> Descreva se houve desafios de integração de fontes de dados e etapas para a mesma.
 
 Os dados foram coletados em seus formatos brutos. Diferentes bancos de dados tinham diferentes tipos de `gene IDs` (símbolos de genes vs Entrez/Ensembl), sendo necessária uma etapa em que utilizamos o Orange e scripts de pré-processamento para fazer o alinhamento de IDs genéticos. Uma mesma amostra foi alinhada nas colunas e submetida à filtragem conjunta na etapa final no R para extração de logs comparáveis através do DESeq2.
 

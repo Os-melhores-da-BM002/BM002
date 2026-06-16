@@ -97,13 +97,13 @@ Foram selecionados DEGs com Log2FC absoluto > 1.5 e p-adj < 0.01. A análise ger
   
   A transição inicial da progressão tumoral identificou os principais reguladores centrais com base na topologia da rede.
 
-  **Top 10 Hubs (Score de Importância):** *CXCR4* (0.910710), *ALB* (0.803369), *CD44* (0.770784), *IL1B* (0.760049), *CXCL12* (0.689680), *FAU* (0.664883), *VWF* (0.591219), *CXCR2* (0.579955), *CXCL9* (0.567574), *CCL13* (0.543277)
+  **Top 10 Hubs (Score de Importância):** *CXCR4* (0.91), *ALB* (0.80), *CD44* (0.77), *IL1B* (0.76), *CXCL12* (0.69), *FAU* (0.66), *VWF* (0.59), *CXCR2* (0.58), *CXCL9* (0.57), *CCL13* (0.54)
 
   A análise de enriquecimento funcional revelou que esses componentes estruturais atuam fortemente em três vias biológicas críticas: **Sinalização de Quimiocinas** (envolvendo 20 genes, como *CXCR4*, *CXCL12* e *CXCR2*), **Reorganização da Matriz Extracelular - MEC** (composta por 17 genes, como *CD44*, *VWF* e *MMP9*) e vias de **Proliferação** (14 genes, incluindo *IL1B*, *HGF* e *MET*).
 
   **Destaques de Expressão Diferencial (DEGs):**
   * **Upregulated:** *VCAM1* (29.21), intimamente ligado ao comportamento agressivo e ao processo de Transição Epitélio-Mesênquima (EMT); *CCL11* (28.34) e *CCL13* (28.16), quimiocinas inflamatórias que atuam no recrutamento imune para evasão tumoral; *CXCL13* (22.35), com expressão regulada positivamente pelo eixo receptor de andrógenos, influenciando metástase e invasão; e *ALB* (16.82).
-  * **Downregulated:** *PPBP* (-19.58) e *CCR9* (-15.64), atuando na atração do sistema imune; *CXCR5* (-8.80), codificando o receptor de quimiocina; *MMP9* (-8.18), uma metaloproteinase de matriz que atua como "tesoura molecular" degradando e remodelando a MEC; e *IL1B* (-7.14), que codifica a citocina pró-inflamatória Interleucina-1 beta (IL-1β).
+  * **Downregulated:** *PPBP* (-19.58), atuando como quimiocina para atração do sistema imune; *CCR9* (-15.64), que codifica o Receptor de Quimiocina 9; *CXCR5* (-8.81), participante da síntese de um receptor na superfície de células imunológicas; *MMP9* (-8.19), uma metaloproteinase de matriz que atua como "tesoura molecular" degradando e remodelando a MEC; e *IL1B* (-7.14), citocina pró-inflamatória Interleucina-1 beta (IL-1β).
 
 * **22Rv1 vs. LNCap:** 
   
@@ -127,27 +127,27 @@ Foram selecionados DEGs com Log2FC absoluto > 1.5 e p-adj < 0.01. A análise ger
 
   **Top 10 Hubs (Score de Importância):** *STAT3* (0.99), *CD44* (0.90), *EGF* (0.71), *GNAQ* (0.66), *TLR4* (0.61), *IL1B* (0.61), *PIK3R1* (0.60), *GNG2* (0.57), *KIT* (0.55), *CAV1* (0.54). 
 
-  A biologia desta rede é amplamente governada por vias de **Citocinas** (envolvendo uma vasta lista de 26 reguladores, destacando-se *STAT3, IL1B, ICAM1, EGF, AR* e a família *JAK/STAT*), evidenciando uma modulação severa do sistema imune. Curiosamente, fatores clássicos associados à **Proliferação** (como *FGF4, FGF8* e *PIK3R1*) sofrem uma supressão (*downregulation*), sugerindo que a agressividade neste ponto independe das vias de crescimento tradicionais.
+  A biologia desta rede é amplamente governada por vias de **Citocinas** (envolvendo uma vasta lista de 26 reguladores, destacando-se *STAT3, IL1B, EGF, AR* e a família *JAK/STAT*), evidenciando uma modulação severa do sistema imune. Curiosamente, fatores clássicos associados à **Proliferação** (como *FGF4, FGF8* e *PIK3R1*) sofrem uma supressão (*downregulation*), sugerindo que a agressividade neste ponto independe das vias de crescimento tradicionais.
 
   **Destaques de Expressão Diferencial (DEGs):**
   * **Upregulated (Expressão Positiva):** *IL7R* (9.46), atuando na progressão tumoral e metástase; *PDGFRA* (9.31), receptor de tirosina quinase para sobrevivência celular; *ICAM1* (9.28), proteína de adesão intercelular clássica na transição para a resistência androgênica; além do complexo *SHH* (9.27) e *IL1B* (8.17), onde o *SHH* sinaliza para o estroma, alterando o microambiente para favorecer metástases.
-  * **Downregulated (Expressão Negativa):** Intensa supressão de estimuladores de proliferação como *FGF8* (-9.96) e *KIT* (-9.96); perda de resposta imune antitumoral evidenciada pela queda de *IFNA1* (-9.79, modulador imune/supressor de tumor) e *IL2RB* (-9.73, identificador de linfócitos); além de *IL17A* (-9.72), envolvido na regulação da sobrevivência tumoral.
+  * **Downregulated (Expressão Negativa):** *FGF8* (-9.96) e *KIT* (-9.96), ambos conhecidos por estimular a proliferação; *IFNA1* (-9.79), proteína Interferon Alfa-1 que atua como supressor de tumor e modulador imune; *IL2RB* (-9.73), importante identificador para os linfócitos, relacionado à resposta imunológica antitumoral; e *IL17A* (-9.72), relacionado à progressão e sobrevivência tumoral.
 
-* **Análise DyNet:** Genes com alto *rewiring* ao longo de toda a escada incluíram CD44, CXCR4, MET e PDGFRB, validando o remapeamento constante das vias de proliferação e remodelação da MEC na evolução do câncer.
-
-#### Análise DyNet (Rewiring da Rede de Referência Central)
-
-![rewiring](assets/images/rewiring.png)
-
-Para avaliar o comportamento global da rede, a ferramenta DyNet foi utilizada para medir o grau de reestruturação topológica ao longo de toda a progressão temporal contínua (BPH1 $\rightarrow$ 22Rv1 $\rightarrow$ LNCap $\rightarrow$ PC3).
-
-* **Alto *Rewiring* (Em vermelho intenso):** Representa os nós que sofrem mudanças drásticas em suas parcerias de interação a cada mudança de estágio, atuando como verdadeiros "motores" de adaptação da doença. A lista global destaca genes fundamentais como *CD44*, *MET*, *PDGFRB* e *CAV1*. O agrupamento funcional revelou que as maiores remodelações ocorrem em:
-  * **Proliferação:** Altamente coordenada pela reestruturação das interações de *STAT3*, *AKT3*, *FGF4* e *FGFR3*.
-  * **Remodelação da MEC:** Forte instabilidade e rearranjo em *ICAM1*, *ANXA2* e fatores estruturais como *COL12A1*.
-  * **Quimiocinas e Citocinas:** Constante remapeamento imune liderado por reguladores como *JAK1*, *PIK3R1*, *CXCL13* e pela família *STAT* (*STAT5A*, *STAT5B*).
-  
-* **Baixo *Rewiring* (Em vermelho desaturado):** Representa genes cuja "vizinhança" na rede se mantém praticamente intacta (como *TRIM54*, *FOXP2* e *CIB3*). Curiosamente, nas funções críticas de remodelação de matriz extracelular, apenas fatores extremamente pontuais (como *CYP46A1*, *F9*, *PRKAA2* e *KCNIP2*) mostraram baixa reestruturação, o que prova que a MEC como um todo é altamente mutável ao longo da malignidade.
-  
+* **Análise DyNet:** Genes com alto *rewiring* ao longo de toda a escada incluíram CD44, CXCR5, MET e PDGFRB, validando o remapeamento constante das vias de proliferação e remodelação da MEC na evolução do câncer.
+   
+   #### Análise DyNet (Rewiring da Rede de Referência Central)
+   
+   ![rewiring](assets/images/rewiring.png)
+   
+   Para avaliar o comportamento global da rede, a ferramenta DyNet foi utilizada para medir o grau de reestruturação topológica ao longo de toda a progressão temporal contínua (BPH1 $\rightarrow$ 22Rv1 $\rightarrow$ LNCap $\rightarrow$ PC3).
+   
+   * **Alto *Rewiring* (Em vermelho intenso):** Representa os nós que sofrem mudanças drásticas em suas parcerias de interação a cada mudança de estágio, atuando como verdadeiros "motores" de adaptação da doença. A lista global destaca genes fundamentais como *CD44*, *MET*, *PDGFRB* e *CAV1*. O agrupamento funcional revelou que as maiores remodelações ocorrem em:
+     * **Proliferação:** Altamente coordenada pela reestruturação das interações de *STAT3*, *AKT3*, *FGF4* e *FGFR3*.
+     * **Remodelação da MEC:** Forte instabilidade e rearranjo em *ICAM1*, *ANXA2* e fatores estruturais como *COL12A1*.
+     * **Quimiocinas e Citocinas:** Constante remapeamento imune liderado por reguladores como *JAK1*, *PIK3R1*, *CXCR6* e pela família *STAT* (*STAT5A*, *STAT5B*).
+     
+   * **Baixo *Rewiring* (Em vermelho desaturado):** Representa genes cuja "vizinhança" na rede se mantém praticamente intacta (como *TRIM54*, *FOXP2* e *CIB3*). Curiosamente, nas funções críticas de remodelação de matriz extracelular, apenas fatores extremamente pontuais (como *CYP46A1*, *F9*, *PRKAA2* e *KCNIP2*) mostraram baixa reestruturação, o que prova que a MEC como um todo é altamente mutável ao longo da malignidade.
+     
 ### 2. Análise de Grupos
 
 * **Câncer vs. Não Câncer (BPH1 vs. 22Rv2, LNCap e PC3)**

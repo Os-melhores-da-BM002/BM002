@@ -150,7 +150,7 @@ Para avaliar o comportamento global da rede, a ferramenta DyNet foi utilizada pa
   
 ### 2. Análise de Grupos
 
-* **Câncer x Não Câncer (BPH1 vs. 22Rv2, LNCap e PC3)**
+* **Câncer vs. Não Câncer (BPH1 vs. 22Rv2, LNCap e PC3)**
 
     <p align="center">
     <img src="assets/images/remodelacao_matriz_cancer_x_n_cancer.png" width="250">
@@ -170,7 +170,7 @@ Para avaliar o comportamento global da rede, a ferramenta DyNet foi utilizada pa
     * **Upregulated (Expressão Positiva):** *KLK4* (14.02), fortemente associado à capacidade de migração do câncer de próstata; *MAGEA1* (12.95), validando a reativação tumoral ectópica; *ALB* (12.89); e *GABRB3* (12.88), uma subunidade de receptor associada atipicamente a vias de crescimento e migração.
     * **Downregulated (Expressão Negativa):** Supressão de reguladores de migração como o *CXCR4* (-10.88); forte queda de *CXCR3* (-10.07), responsável pelo recrutamento de células de defesa para locais de inflamação; e inibição de *DKK3* (-10.51), um conhecido bloqueador da via Wnt, cuja supressão destrava o crescimento tumoral.
 
-* **Metastático x Não Metastático (BPH1 e 22Rv1 vs LNCap e PC3)**
+* **Metastático vs. Não Metastático (BPH1 e 22Rv1 vs LNCap e PC3)**
 
     ![metXnMet](assets/images/metastatico_x_nao_metastatico.png)
 
@@ -184,7 +184,7 @@ Para avaliar o comportamento global da rede, a ferramenta DyNet foi utilizada pa
     * **Upregulated (Expressão Positiva):** *CYP3A4* (9.88), enzima fundamental do sistema citocromo P450; *FLT1* (8.90), receptor de tirosina quinase para o fator de crescimento endotelial vascular (VEGF); *ERBB4* (7.98), receptor do fator de crescimento epidermal; *CD19* (7.80), marcador de células B; e *NTRK2* (7.47), associado à aquisição de resistência à quimioterapia e facilitação da metástase.
     * **Downregulated (Expressão Negativa):** Redução expressiva de *CXCL9* (-13.41), quimiocina responsável por atrair linfócitos T; *ESR1* (-12.44), receptor hormonal associado à proliferação e metástase; *IL17A* (-11.01), citocina que atua em sinais de sobrevivência e proliferação celular; e *PRKACG* (-10.43), que codifica a subunidade gama da proteína quinase A (PKA).
 
-* **Sensível x Insensível a Andrógeno (Dependente x Independente de Andrógeno)**
+* **Sensível vs. Insensível a Andrógeno (Dependente x Independente de Andrógeno)**
 
     ![sensXinsens](assets/images/sensivel_x_insensivel.png)
 
@@ -203,7 +203,8 @@ Para avaliar o comportamento global da rede, a ferramenta DyNet foi utilizada pa
 A análise dos resultados permitiu confrontar diretamente as perguntas de pesquisa formuladas no início deste estudo, validando a eficácia da Ciência de Redes combinada à transcriptômica, mas também impondo limites realistas às abordagens puramente estruturais baseadas em *snapshots* estáticos.
 
 ### Relação com as Perguntas de Pesquisa
-1. **Quais são os mRNAs centrais expressos em cada fase do tumor?** * *Respondida:* O pipeline identificou com precisão os principais *genes-hub* reguladores de cada estágio clínico. Observou-se uma transição clara de comando topológico: o início da malignidade é liderado por eixos inflamatórios e de invasão celular (*CXCR4* e *CD44*), evoluindo para sinalizações massivas de crescimento e metástase (*IL6* e *EGF*) e culminando na agressividade insensível a andrógenos controlada pelo hub *STAT3*.
+1. **Quais são os mRNAs centrais expressos em cada fase do tumor?**
+   * *Respondida:* O pipeline identificou com precisão os principais *genes-hub* reguladores de cada estágio clínico. Observou-se uma transição clara de comando topológico: o início da malignidade é liderado por eixos inflamatórios e de invasão celular (*CXCR4* e *CD44*), evoluindo para sinalizações massivas de crescimento e metástase (*IL6* e *EGF*) e culminando na agressividade insensível a andrógenos controlada pelo hub *STAT3*.
 2. **Existem grupos de genes que se mantêm estáveis ou desaparecem durante a progressão do câncer?**
    * *Respondida:* A análise pelo DyNet revelou que enquanto vias associadas à matriz extracelular (MEC), citocinas e quimiocinas sofrem um rearranjo drástico e contínuo (alto *rewiring*), componentes estruturais específicos da MEC e funções celulares básicas (como *CYP46A1* e *PRKAA2*) retêm forte estabilidade conectiva (baixo *rewiring*), preservando o esqueleto fundamental da rede.
 3. **É possível prever a progressão da malignidade do CdP?** e 4. **Seria possível criar um mecanismo de identificação da possibilidade de aumento de malignidade com base no perfil de expressão?**

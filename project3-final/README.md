@@ -56,7 +56,7 @@ A abordagem proposta baseia-se na aplicação de Ciência de Redes voltada ao es
 
 O modelo lógico revisado define os nós como mRNAs (mapeados por cor de acordo com Log2FC e tamanho pelo *Score de Importância*) e as arestas como interações de coexpressão, cuja transparência é modulada pelo *String_Score*.
 
-![Modelo Lógico de Grafos](assets/images/modelo_logico_entrega-3.png)
+![Modelo Lógico de Grafos](assets/images/modelo_logico_final.png)
 
 ## Integração entre Bases
 

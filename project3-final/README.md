@@ -16,8 +16,8 @@ O projeto fundamenta-se na identificação de marcas funcionais do câncer e nos
 * **Artigos Base:**
     * **HANAHAN, Douglas (2026):** Fornece a base lógica das dimensões paramétricas e capacidades funcionais adquiridas que definem a doença durante a evolução adaptativa.
     * **ZHU, Y. et al. (2020):** Fundamenta a transição molecular para o estado de resistência à castração e a caracterização de modelos de progressão tumoral via variantes de receptor de andrógeno.
-    * **XU, Xiangming et al. (2020):** Propõe medidas de entropia de informação de adjacência para identificação de nós vitais, superando limitações de escopo de métricas tradicionais como Betweenness e Eigenvector.
-    * **YANG, Yuanzhi et al. (2019):** Aborda sobre métodos de decisão multicritério que combina Degree, Closeness e Betweenness via ponderação por entropia, demonstrando maior precisão que critérios isolados.
+    * **XU, X. et al. (2020):** Propõe medidas de entropia de informação de adjacência para identificação de nós vitais, superando limitações de escopo de métricas tradicionais como Betweenness e Eigenvector.
+    * **YANG, Y. et al. (2019):** Aborda sobre métodos de decisão multicritério que combina Degree, Closeness e Betweenness via ponderação por entropia, demonstrando maior precisão que critérios isolados.
 
 * **Problema:** Identificar como a rede de coexpressão gênica se reestrutura para conferir resistência a tratamentos hormonais e capacidade metastática, estabelecendo uma assinatura de progressão entre os diferentes estágios da doença.
 

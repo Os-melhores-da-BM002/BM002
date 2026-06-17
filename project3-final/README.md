@@ -36,7 +36,7 @@ A abordagem proposta baseia-se na aplicação de Ciência de Redes voltada ao es
 2. **Análise Diferencial:** Identificação estatística de genes modulados entre 6 condições de comparação (ajuste Bonferroni com p-Value < 0.01 e |Log2FC| > 1.5).
 3. **Modelagem de Redes:** Construção de grafos de interação proteica (STRING, *confidence* > 0.75) para análise de *hubs* e comunidades.
 4. **Análise Topológica:** Cálculo de centralidade (*Degree, Betweenness, Closeness, Eigenvector*) para determinar o impacto estrutural da remoção de nós na dinâmica da rede.
-5. **Análise de Importância:** Cálculo de um score composto via normalização min-max (0 a 1) e média das centralidades (Degree, Betweenness, Closeness, Eigenvector), de modo a priorizar genes com relevância estrutural consistente em múltiplas métricas. A abordagem é inspirada no trabalho de Xu et al. (2020), que discute como centralidades isoladas captam apenas uma parte da importância de um nó dentro da rede, levando a perda de informação estrutural, sendo necessário combinar duas ou mais métricas para uma avaliação mais robusta.
+5. **Análise de Importância:** Cálculo de um score composto via normalização min-max (0 a 1) e média das centralidades (Degree, Betweenness, Closeness, Eigenvector), de modo a priorizar genes com relevância estrutural consistente em múltiplas métricas. A abordagem é inspirada no trabalho de Xu et al. (2020) e Yang et al. (2019), que discutem como métricas isoladas, não apenas centralidades, captam apenas uma parte da importância de um nó dentro da rede, levando a perda de informação estrutural, sendo necessário combinar duas ou mais métricas para uma avaliação mais robusta.
 
 ## Bases de Dados e Evolução
 
@@ -247,3 +247,5 @@ Para superar as limitações preditivas identificadas e refinar o isolamento de 
 5. TANG, S. et al. A genome-scale CRISPR screen reveals PRMT1 as a critical regulator of androgen receptor signaling in prostate cancer. **Cell Reports**, v. 38, n. 8, 2022. DOI: [10.1016/j.celrep.2022.110417](https://doi.org/10.1016/j.celrep.2022.110417).
 
 6. Xu, X., Zhu, C., Wang, Q., Zhu, X., & Zhou, Y. (2020). Identifying vital nodes in complex networks by adjacency information entropy. Scientific Reports, 10. DOI: [10.1038/s41598-020-59616-w](https://doi.org/10.1038/s41598-020-59616-w)
+
+7. Yang, Y., Yu, L., Zhou, Z., Chen, Y., & Kou, T. (2019). Node Importance Ranking in Complex Networks Based on Multicriteria Decision Making. Mathematical Problems in Engineering. DOI: [10.1155/2019/9728742](https://doi.org/10.1155/2019/9728742) 

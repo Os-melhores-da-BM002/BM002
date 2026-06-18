@@ -3,7 +3,7 @@
 
 # Descrição Resumida do Projeto
 
-O câncer de próstata (CdP) apresenta um comportamento biológico complexo, onde a transição de um estado indolente para uma forma maligna agressiva é acompanhada por mudanças drásticas no perfil de expressão gênica. O objetivo deste projeto é investigar a progressão da malignidade do CdP através da alteração na topologia das redes de interação de mRNAs. A estratégia central foca na combinação de múltiplos datasets transcriptômicos para mapear a evolução da doença em estágios críticos, desde o tumor primário até o estado metastático insensível a andrógenos. Para isso, os dados foram ubmetidos a análise diferencial de expressão utilizando bibliotecas do R, seguido por extração de redes através da base STRING, possibilitando a descoberta de genes hub entre cada transição de estágios.
+O câncer de próstata (CdP) apresenta um comportamento biológico complexo, onde a transição de um estado indolente para uma forma maligna agressiva é acompanhada por mudanças drásticas no perfil de expressão gênica. O objetivo deste projeto é investigar a progressão da malignidade do CdP através da alteração na topologia das redes de interação de mRNAs. A estratégia central foca na combinação de múltiplos datasets transcriptômicos para mapear a evolução da doença em estágios críticos, desde o tumor primário até o estado metastático insensível a andrógenos. Para isso, os dados foram submetidos a análise diferencial de expressão utilizando bibliotecas do R, seguido por extração de redes através da base STRING, possibilitando a descoberta de genes hub entre cada transição de estágios.
 
 # Slides
 
@@ -189,7 +189,7 @@ Foram selecionados DEGs com Log2FC absoluto > 1.5 e p-adj < 0.01. A análise ger
     * **Upregulated (Expressão Positiva):** *CYP3A4* (9.88), enzima fundamental do sistema citocromo P450; *FLT1* (8.90), receptor de tirosina quinase para o fator de crescimento endotelial vascular (VEGF); *ERBB4* (7.98), receptor do fator de crescimento epidermal; *CD19* (7.80), marcador de células B; e *NTRK2* (7.47), associado à aquisição de resistência à quimioterapia e facilitação da metástase.
     * **Downregulated (Expressão Negativa):** Redução expressiva de *CXCL9* (-13.41), quimiocina responsável por atrair linfócitos T; *ESR1* (-12.44), receptor hormonal associado à proliferação e metástase; *IL17A* (-11.01), citocina que atua em sinais de sobrevivência e proliferação celular; e *PRKACG* (-10.43), que codifica a subunidade gama da proteína quinase A (PKA).
 
-* **Sensível vs. Insensível a Andrógeno (Dependente vs. Independente de Andrógeno)**
+* **Sensível vs. Insensível a Andrógeno (BPH1, 22Rv1 e LNCap vs. PC3)**
 
     ![sensXinsens](assets/images/sensivel_x_insensivel.png)
 

@@ -11,15 +11,17 @@ O câncer de próstata (CdP) apresenta um comportamento biológico complexo, ond
 
 # Fundamentação Teórica
 
-O projeto fundamenta-se na identificação de marcas funcionais do câncer e nos mecanismos moleculares de resistência que permitem a progressão da doença.
+O projeto fundamenta-se na identificação de marcas funcionais do câncer, nos mecanismos moleculares de resistência que permitem a progressão da doença e na aplicação de métricas topológicas para encontrar reguladores estruturais.
 
-* **Artigos Base:**
-    * **HANAHAN, Douglas (2026):** Fornece a base lógica das dimensões paramétricas e capacidades funcionais adquiridas que definem a doença durante a evolução adaptativa.
-    * **ZHU, Y. et al. (2020):** Fundamenta a transição molecular para o estado de resistência à castração e a caracterização de modelos de progressão tumoral via variantes de receptor de andrógeno.
-    * **XU, X. et al. (2020):** Propõe medidas de entropia de informação de adjacência para identificação de nós vitais, superando limitações de escopo de métricas tradicionais como Betweenness e Eigenvector.
-    * **YANG, Y. et al. (2019):** Aborda sobre métodos de decisão multicritério que combina Degree, Closeness e Betweenness via ponderação por entropia, demonstrando maior precisão que critérios isolados.
+* **Artigos Base (Eixo Biológico e Clínico):**
+    * **HANAHAN (2026):** Fornece a base lógica das capacidades funcionais adquiridas que definem a doença durante sua evolução adaptativa (*Hallmarks of Cancer*).
+    * **ZHU et al. (2020) e TANG et al. (2022):** Fundamentam o problema da transição molecular para o estado de resistência à castração e a regulação da sinalização do receptor de andrógeno.
+    * **CHEN et al. (2015), FAN et al. (2017), OHANDJO et al. (2019), LUO et al. (2022) e KALIBEROV et al. (2004):** Embasam o papel crítico do microambiente imune e da sinalização inflamatória na doença. Validam a importância topológica de módulos encontrados nas nossas análises na promoção de metástase, migração celular e evasão tumoral.
+     
+* **Artigos Base (Eixo de Ciência de Redes):**
+    * **EVANS & CHEN (2022), XU et al. (2020) e YANG et al. (2019):** Fornecem o suporte matemático e metodológico para o problema de ranqueamento e identificação de nós vitais (*genes-hub*) em redes complexas, justificando teoricamente o uso de métricas de centralidade multicritério (como *Degree*, *Betweenness* e *Closeness*) para mapear o impacto estrutural da doença.
 
-* **Problema:** Identificar como a rede de coexpressão gênica se reestrutura para conferir resistência a tratamentos hormonais e capacidade metastática, estabelecendo uma assinatura de progressão entre os diferentes estágios da doença.
+* **Problema:** Identificar como a rede de coexpressão gênica se reestrutura topologicamente para conferir resistência a tratamentos hormonais e capacidade metastática, estabelecendo uma assinatura estrutural de progressão contínua entre os diferentes estágios da doença.
 
 # Perguntas de Pesquisa
 
@@ -238,16 +240,24 @@ Para superar as limitações preditivas identificadas e refinar o isolamento de 
 
 # Referências Bibliográficas
 
-1. EVANS, T. S.; CHEN, B. Linking the network centrality measures closeness and degree. **Communications Physics**, v. 5, n. 172, 2022. DOI: [10.1038/s42005-022-00949-5](https://doi.org/10.1038/s42005-022-00949-5).
+1. CHEN, C. et al. IL‐17 and insulin/IGF1 enhance adhesion of prostate cancer cells to vascular endothelial cells through CD44‐VCAM‐1 interaction. The Prostate, v. 75, n. 8, p. 883–895, 14 fev. 2015. DOI: 10.1002/pros.22971
 
-2. HANAHAN, Douglas. Hallmarks of cancer—Then and now, and beyond. **Cell**, v. 189, n. 3, p. S0092-8674(25)01498-9, 2026. DOI: [10.1016/j.cell.2025.12.049](https://doi.org/10.1016/j.cell.2025.12.049).
+2. EVANS, T. S.; CHEN, B. Linking the network centrality measures closeness and degree. **Communications Physics**, v. 5, n. 172, 2022. DOI: [10.1038/s42005-022-00949-5](https://doi.org/10.1038/s42005-022-00949-5).
 
-3. LUO, Y.; LIU, X.; LIN, J.; ZHONG, W.; CHEN, Q. Development and validation of novel inflammatory response-related gene signature to predict prostate cancer recurrence and response to immune checkpoint therapy. **Mathematical Biosciences and Engineering (MBE)**, v. 19, n. 11, p. 11345–11366, 2022. DOI: [10.3934/mbe.2022528](https://doi.org/10.3934/mbe.2022528).
+3. FAN, L. et al. CXCL13 is androgen-responsive and involved in androgen induced prostate cancer cell migration and invasion. Oncotarget, v. 8, n. 32, p. 53244–53261, 7 jun. 2017. DOI:10.18632/oncotarget.18387
 
-4. National Center for Biotechnology Information (NCBI). **Gene Expression Omnibus (GEO)**. Disponível em: [https://www.ncbi.nlm.nih.gov/geo/](https://www.ncbi.nlm.nih.gov/geo/).
+4. HANAHAN, Douglas. Hallmarks of cancer—Then and now, and beyond. **Cell**, v. 189, n. 3, p. S0092-8674(25)01498-9, 2026. DOI: [10.1016/j.cell.2025.12.049](https://doi.org/10.1016/j.cell.2025.12.049).
 
-5. TANG, S. et al. A genome-scale CRISPR screen reveals PRMT1 as a critical regulator of androgen receptor signaling in prostate cancer. **Cell Reports**, v. 38, n. 8, 2022. DOI: [10.1016/j.celrep.2022.110417](https://doi.org/10.1016/j.celrep.2022.110417).
+5. KALIBEROV, S. A. et al. Adenovirus-mediated FLT1-targeted proapoptotic gene therapy of human prostate cancer. Molecular Therapy, v. 10, n. 6, p. 1059–1070, dez. 2004. DOI:10.1016/j.ymthe.2004.08.024
 
-6. Xu, X., Zhu, C., Wang, Q., Zhu, X., & Zhou, Y. (2020). Identifying vital nodes in complex networks by adjacency information entropy. Scientific Reports, 10. DOI: [10.1038/s41598-020-59616-w](https://doi.org/10.1038/s41598-020-59616-w)
+6. LUO, Y.; LIU, X.; LIN, J.; ZHONG, W.; CHEN, Q. Development and validation of novel inflammatory response-related gene signature to predict prostate cancer recurrence and response to immune checkpoint therapy. **Mathematical Biosciences and Engineering (MBE)**, v. 19, n. 11, p. 11345–11366, 2022. DOI: [10.3934/mbe.2022528](https://doi.org/10.3934/mbe.2022528).
 
-7. Yang, Y., Yu, L., Zhou, Z., Chen, Y., & Kou, T. (2019). Node Importance Ranking in Complex Networks Based on Multicriteria Decision Making. Mathematical Problems in Engineering. DOI: [10.1155/2019/9728742](https://doi.org/10.1155/2019/9728742) 
+7. National Center for Biotechnology Information (NCBI). **Gene Expression Omnibus (GEO)**. Disponível em: [https://www.ncbi.nlm.nih.gov/geo/](https://www.ncbi.nlm.nih.gov/geo/).
+
+8. OHANDJO, A. Q. et al. Transcriptome Network Analysis Identifies CXCL13-CXCR5 Signaling Modules in the Prostate Tumor Immune Microenvironment. Scientific Reports, v. 9, n. 1, p. 14963–14963, 18 out. 2019. DOI:10.1038/s41598-019-46491-3
+
+9. TANG, S. et al. A genome-scale CRISPR screen reveals PRMT1 as a critical regulator of androgen receptor signaling in prostate cancer. **Cell Reports**, v. 38, n. 8, 2022. DOI: [10.1016/j.celrep.2022.110417](https://doi.org/10.1016/j.celrep.2022.110417).
+
+10. Xu, X., Zhu, C., Wang, Q., Zhu, X., & Zhou, Y. (2020). Identifying vital nodes in complex networks by adjacency information entropy. Scientific Reports, 10. DOI: [10.1038/s41598-020-59616-w](https://doi.org/10.1038/s41598-020-59616-w)
+
+11. Yang, Y., Yu, L., Zhou, Z., Chen, Y., & Kou, T. (2019). Node Importance Ranking in Complex Networks Based on Multicriteria Decision Making. Mathematical Problems in Engineering. DOI: [10.1155/2019/9728742](https://doi.org/10.1155/2019/9728742) 

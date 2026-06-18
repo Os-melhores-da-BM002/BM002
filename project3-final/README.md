@@ -175,7 +175,7 @@ Foram selecionados DEGs com Log2FC absoluto > 1.5 e p-adj < 0.01. A análise ger
     * **Upregulated (Expressão Positiva):** *KLK4* (14.02), fortemente associado à capacidade de migração do câncer de próstata; *MAGEA1* (12.95), validando a reativação tumoral ectópica; *ALB* (12.89); e *GABRB3* (12.88), uma subunidade de receptor associada atipicamente a vias de crescimento e migração.
     * **Downregulated (Expressão Negativa):** Supressão de reguladores de migração como o *CXCR4* (-10.88); forte queda de *CXCR3* (-10.07), responsável pelo recrutamento de células de defesa para locais de inflamação; e inibição de *DKK3* (-10.51), um conhecido bloqueador da via Wnt, cuja supressão destrava o crescimento tumoral.
 
-* **Metastático vs. Não Metastático (BPH1 e 22Rv1 vs LNCap e PC3)**
+* **Metastático vs. Não Metastático (BPH1 e 22Rv1 vs. LNCap e PC3)**
 
     ![metXnMet](assets/images/metastatico_x_nao_metastatico.png)
 
@@ -189,7 +189,7 @@ Foram selecionados DEGs com Log2FC absoluto > 1.5 e p-adj < 0.01. A análise ger
     * **Upregulated (Expressão Positiva):** *CYP3A4* (9.88), enzima fundamental do sistema citocromo P450; *FLT1* (8.90), receptor de tirosina quinase para o fator de crescimento endotelial vascular (VEGF); *ERBB4* (7.98), receptor do fator de crescimento epidermal; *CD19* (7.80), marcador de células B; e *NTRK2* (7.47), associado à aquisição de resistência à quimioterapia e facilitação da metástase.
     * **Downregulated (Expressão Negativa):** Redução expressiva de *CXCL9* (-13.41), quimiocina responsável por atrair linfócitos T; *ESR1* (-12.44), receptor hormonal associado à proliferação e metástase; *IL17A* (-11.01), citocina que atua em sinais de sobrevivência e proliferação celular; e *PRKACG* (-10.43), que codifica a subunidade gama da proteína quinase A (PKA).
 
-* **Sensível vs. Insensível a Andrógeno (Dependente x Independente de Andrógeno)**
+* **Sensível vs. Insensível a Andrógeno (Dependente vs. Independente de Andrógeno)**
 
     ![sensXinsens](assets/images/sensivel_x_insensivel.png)
 
